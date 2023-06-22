@@ -1,135 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./asset/bootstrap.min.css">
+  <!-- bootstrap-icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!--FontAwesome cdn link-->
 
-    <!--FontAwesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--Custom css file-->
-
-    <link rel="stylesheet" href="style.css">
+  <!--Custom css file-->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
-<!-- navbar section -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container">
-            <a class="navbar-brand mt-3 d-flex" href="#" >
-              <img src="img/logo3.png" alt="logo"><p class="text-success ">E-L<span class="text-decoration-underline text-primary">e</span>arn</p> 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav gap-3 px-4">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Programs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Professional Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Admissions</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonials</a>
-                </li>
-          
-              </ul>
-              <a class="ms-5 text-decoration-none text-dark" href="#">Log in</a>
-              <button type="button" class="btn btn-success ms-3">Registration</button>
 
-            </div>
-          </div>
-      </nav>
+<body>
+
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand mt-3 d-flex" href="#">
+        <img src="img/logo3.png" alt="logo">
+        <p class="text-success ">E-L<span class="text-decoration-underline text-primary">e</span>arn</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gap-3 px-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Professional Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li>
+            <a class="ms-5 text-decoration-none text-dark" href="#">Login</a>
+          </li>
+          <li>
+            <button type="button" class="btn btn-success ms-3">Registration</button>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
   <!-- navbar section end -->
 
-<!--Home section start-->
+  <!--Home section start-->
+  <section id="HomeSection">
+    <div class="row">
+      <div class="col-md-6 mt-5 d-lg-flex align-items-center">
+        <div>
+          <div class="container align-items-center justify-content-center">
+            <h1 class="">
+              Lockdown Cant't Stop Your Learning
+            </h1>
+          </div>
+          <div class=" container d-flex justify-content-center align-items-center">
+            <p class="">
+              ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+              courses. We crush the barrires to getting a degree
+            </p>
+          </div>
+          <div>
+            <button class="exploreBtn">Explore Courses</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="./img/bg.jpg" alt="..." class="img-fluid">
+      </div>
+    </div>
+    <!-- Sponsers -->
+    <div class="container-lg d-flex justify-content-around align-items-center my-border">
+      <div>
+        <img src="./img/udemy.png" alt="" class="img-fluid" width="200">
+      </div>
+      <div>
+        <img src="./img/khanAcademy.png" alt="" class="img-fluid" width="200">
+      </div>
+      <div>
+        <img src="./img/ursera.png" alt="" class="img-fluid" width="200">
+      </div>
+      <div>
+        <img src="./img/udacity.png" alt="" class="img-fluid" width="300">
+      </div>
+      <div>
+        <img src="./img/Kadenze.png" alt="" class="img-fluid" width="200">
+      </div>
+    </div>
 
-<section id="home">
-  
-  
+
+    <!-- Sponers end -->
+  </section>
 
 
-  <div class="content ">
-      <h2>Lockdown can't<br>Stop your learning</h2>
-      <p>Elearn is a global training provider based across the UK that specialises
-          <br>in accredited and bespoke training courses. We crush the barriers to 
-          <br>getting a degree.
-      </p>
-      <button id="btn">Explore Courses</button>
-      
+
+
+
+  <!--Home Section end-->
+
+  <!--Text field-->
+
+  <div class="container mt-5">
+    <div class="row mb-5">
+      <div class="col-md-8 d-flex justify-content-around">
+        <div class="input-group mb-3 w-25">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Course Name" aria-label="Course Name"
+            aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3 w-25">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" placeholder="Tutor Name" aria-label="Tutor Name"
+            aria-describedby="basic-addon2">
+        </div>
+        <button type="button" style="height: fit-content;" class="btn btn-sm btn-success">
+          <i class="bi bi-search"></i>
+          Search
+        </button>
+      </div>
+      <div class="col-4">
+        <select class="form-select form-select-lg" aria-label="Default select example">
+          <option selected>👁Popular Courses</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
   </div>
 
-  <div class="card Bigest_card mb-3" style="max-width: 200px;">
-    <div class="row g-0">
-      <div class="col-md-2 ">
-        <img src="img/logo3.png" class="img-fluid rounded-start mt-3 card_logo1" alt="...">
+  <!--Text field end-->
+
+  <!-- Cards each row 3 -->
+
+  <section class="my-5" id="Cards">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 1st End -->
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 2nd End -->
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 3rd End -->
       </div>
-      <div class="col-md-10">
-        <div class="card-body">
-          <h6 class="card-text">Bigest Online learninig platform</h6>
-         
+      <!-- 1st Row Ended -->
+
+      <!-- 2nd Row Started -->
+      <div class="row justify-content-around algin-items-between">
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 1st End -->
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 2nd End -->
+        <div class="col-md-3 border rounded-3 p-5 hover-custom">
+          <div>
+            <i class="bi bi-currency-exchange"></i>
+          </div>
+          <div>
+            <h5>Finace for Non-Financial Mangaers</h5>
+          </div>
+          <div>
+            <h5 class="text-success">$350</h5>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-play-circle"></i>
+              <p>45 Videos</p>
+            </span>
+            <span class="d-flex justify-content-between">
+              <i class="text-success bi bi-star"></i>
+              <p>2.3k Views</p>
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-outline-success">Join Now</button>
+          </div>
+        </div>
+        <!-- 3rd End -->
+      </div>
+      <!-- 2nd Row Ended -->
+      <div class="d-flex justify-content-center mt-5">
+        <div>
+          <Button class="btn btn-success">Load More Courses</Button>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- Cards End each row 3 -->
 
-     
-    <div class="card dailylearn_card " style="width: 11rem; height: 7rem;">
-      <div class="card2 mt-3">
-      <img src="img/logo3.png" class=" card_logo1" alt="Bigest Online learninig platform logo">
-    </div>
-    <div class="card-body">
-    <h6>100K+ Students Learn Daily</h6>
-    </div>
-   </div>
+  <!-- Register Container -->
+  <section id="Register">
+    <div class="row align-items-center">
+      <div class="col-md-6" id="divImage">
+        <img src="./img/26702.jpg" alt="..." class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h1>
+            Why We Learn
+          </h1>
+          <h1>
+            From Elearn
+          </h1>
+        </div>
+        <div>
+          <p class="">
+            ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+            courses. We crush the barrires to getting a degree
+          </p>
+        </div>
+        <div class="d-flex mt-4">
+          <div class="mx-5">
+            <strong>
+              <i class="text-success bi bi-check2-circle"></i>
+              World-class
+            </strong>
+          </div>
+          <div class="mx-5">
+            <strong>
+              <i class="text-success bi bi-check2-circle"></i>
+              Flexible
+            </strong>
+          </div>
+        </div>
+        <div class="d-flex mt-4">
+          <div class="mx-5">
+            <strong>
+              <i class="text-success bi bi-check2-circle"></i>
+              Affordable
+            </strong>
+          </div>
+          <div class="mx-5">
+            <strong>
+              <i class="text-success bi bi-check2-circle"></i>
+              Job-relevent
+            </strong>
+          </div>
+        </div>
+        <div>
+          <button class="exploreBtn mt-5">Register Now</button>
+        </div>
+      </div>
 
-    <div class="card trained_card" style="width: 11rem;">
-      <div class=" mt-3">
-      <img src="img/logo3.png" class=" card_logo1 mb-2" alt="Bigest Online learninig platform logo">
     </div>
-   
-    <h6>Trained Teachers </h6>
-    <h6>Trained Teachers </h6>
-    <h6>Trained Teachers </h6>
-   
+
+  </section>
+
+
+  <!-- Register Container Ended -->
+
+
+  <!-- Company Courses -->
+
+  <section id="courses" class="my-5 section-bg">
+    <div class="d-flex  justify-content-center">
+
+      <div>
+        <h1 class="text-center">Explore Company Courses</h1>
+        <p class="">
+          ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+          courses. We crush the barrires to getting a degree
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-md-4">
+        <span class="img-circle">
+          <img src="" alt="">
+        </span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Company Courses Ended -->
+
+  <!-- Course Feedback -->
+
+  <section id="feedback">
+    <div class="container">
+      <div>
+        <h1 class="text-center"> People Says About Courses</h1>
+        <p class="text-center">
+          ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+          courses. We crush the barrires to getting a degree
+        </p>
+      </div>
+    </div>
+
+    <div class="my-5">
+
+      <div class="row justify-content-around">
+        <div class="col-lg-4 shadow shadow-lg rounded-3 border">
+          <div class="d-flex">
+            <div class="">
+              <img class="img-fluid" src="./img/profile1.jpg" alt="" width="300">
+            </div>
+            <div>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <h5>Best Leaning Platform</h5>
+              <p class="">
+                ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+                courses. We crush the barrires to getting a degree
+              </p>
+              <div>
+                <strong>
+                  <h6>Robert Fox</h6>
+                </strong>
+                <p>O-Level Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 shadow shadow-lg rounded-3 border">
+          <div class="d-flex">
+            <div class="">
+              <img class="img-fluid" src="./img/profile1.jpg" alt="" width="300">
+            </div>
+            <div>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <h5>Best Leaning Platform</h5>
+              <p class="">
+                ELearn is global trainng Provider based across the UK that speacialises in accredited and bespoke traning
+                courses. We crush the barrires to getting a degree
+              </p>
+              <div>
+                <strong>
+                  <h6>Robert Fox</h6>
+                </strong>
+                <p>O-Level Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
     </div>
   </section>
- 
-  <div class="container section2">
-  <hr>
-  <div class=" row company_logo">
-  <div class="col"><a href="#"><img src="img/udemy.png" alt=""></a></div> 
-  <div class="col"><a href=""><img class="udacity" src="img/udacity.png" alt=""></a></div> 
-  <div class="col"><a href=""><img src="img/Kadenze.png" alt=""></a></div> 
-  <div class="col"><a href=""><img src="img/ursera.png" alt=""></a></div> 
-  <div class="col"><a href=""><img src="img/khanAcademy.png" alt=""></a></div>  
-  </div>
-  <hr>
-</div>
+  <!-- Course Feedback Ended -->
 
 
 
 
 
 
+  <!-- Footer -->
+  <footer>
+    <div class="bg-custom container rounded-3">
+      <div class="d-flex align-items-center justify-content-center pt-5">
+        <div>
+          <div>
+            <h1>Subscribe For get Update </h1>
+            <h1> Every New Courses</h1>
+          </div>
+          <div>
+            <p>
+              Elearn is a global trainng provider based accross th UK that speacialises in accredited
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <div class="input-group mb-3 w-25 mb-5">
+          <input type="text" class="form-control w-50" placeholder="Enter Your Email" aria-label="Enter Your Email"
+            aria-describedby="button-addon2">
+          <button class="btn-custom" type="button" id="button-addon2">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-About -->
+
+    <div class="container mt-5">
+      <div class="row justify-content-around">
+        <div class="col-md-2">
+          <h4>Elearn</h4>
+          <div class="mt-3">
+            <p class="text-secondary">About</p>
+            <p class="text-secondary">What we Offer</p>
+            <p class="text-secondary">Leadership</p>
+            <p class="text-secondary">Careers</p>
+            <p class="text-secondary">Catlog</p>
+            <p class="text-secondary">For enterprise</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4>Courses</h4>
+          <div class="mt-3">
+            <p class="text-secondary">Classroom Courses</p>
+            <p class="text-secondary">Virtual classroom Courses</p>
+            <p class="text-secondary">E-Learning Courses</p>
+            <p class="text-secondary">Video Courses</p>
+            <p class="text-secondary">offline Courses</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4>Community</h4>
+          <div class="mt-3">
+            <p class="text-secondary">Learner</p>
+            <p class="text-secondary">Partner</p>
+            <p class="text-secondary">Developers</p>
+            <p class="text-secondary">Transactions</p>
+            <p class="text-secondary">Blog</p>
+            <p class="text-secondary">Teaching Center</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4>Quick Links</h4>
+          <div class="mt-3">
+            <p class="text-secondary">Home</p>
+            <p class="text-secondary">Professional Eduacations</p>
+            <p class="text-secondary">Courses</p>
+            <p class="text-secondary">Admissions</p>
+            <p class="text-secondary">Testimonial</p>
+            <p class="text-secondary">Programs</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4>More</h4>
+          <div class="mt-3">
+            <p class="text-secondary">Press</p>
+            <p class="text-secondary">Investors</p>
+            <p class="text-secondary">Terms</p>
+            <p class="text-secondary">Privacy</p>
+            <p class="text-secondary">help</p>
+            <p class="text-secondary">Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer-About end -->
+
+    <!-- Copyright and Contact -->
+    <div class="container-fluid bg-footer d-flex justify-content-between">
+      <div class="d-flex align-items-center ">
+        <img class="img-fluid" src="./img/logo3.png" alt="" width="50">
+        <p class="text-light ">E-L<span class="text-decoration-underline text-primary">e</span>arn</p>
+      </div>
+      <div class="d-flex align-items-center" id="copyright">
+        <p class="text-light">
+          &copy; 2021 Elearn. All rights reversed 
+        </p>
+      </div>
+      <div class="d-flex align-items-center justify-content-center text-light">
+        <span class="px-3"><i class="bi bi-facebook"></i></span>
+        <span class="px-3"><i class="bi bi-instagram"></i></span>
+        <span class="px-3"><i class="bi bi-twitter"></i></span>
+        <span class="px-3"><i class="bi bi-linkedin"></i></span>
+      </div>
+
+    </div>
+
+
+    <!-- Copyright and Contact End -->
 
 
 
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Footer End -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./asset/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

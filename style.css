@@ -10,83 +10,50 @@
     height: 30px;
 }
 
-/* home section start */
-
-#home {
-    width: 100%;
-    height: 110vh;
-  
-    background-image: url(./img/bgIMG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    
- }
-   #home .content {
-    padding-top: 250px;
-    margin-left: 40px;
-    color: rgb(0, 0, 0);
-  }
-  
-  #home .content h2{
-    font-size: 50px;
-    margin-bottom: 10px ;
-  }
-  
-  #home .cpntent p {
-    margin-top: 10px;
-  }
-  
-  #btn {
-    width: 150px;
-    height: 36px;
-    margin-top: 20px;
-    background: rgb(126, 36, 179);
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-    transition: 0.5s ease;
-    cursor: pointer;
-  }
-  
-  #btn:hover {
-    background: rgb(126, 36, 179);
-    color: (black);
-  }
-  
-  /* home section end */
-  .card_logo1{
-    width: 30px;
-    height: 30px;
-  }
-  .card2 {
-   
-    text-align: center;
-}
-.card2 img {
-    width: 50px;
+.exploreBtn{
+  background-color: blueviolet;
+  color: white;
+  margin-left: 5%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
-.Bigest_card{
-position: relative;
-left: 550px;
- bottom: 470px;
+.my-border{
+  border: solid ;
+  border-color: grey;
+  border-width: 1px 0px 1px 0px;
+
 }
 
-.dailylearn_card{
-position: relative;
-left: 550px;
- bottom: 250px;
+
+.bg-custom{
+  background-color: #85d1a0;
+  color: white;
 }
-.trained_card{
-  position: relative;
-left: 1000px;
- bottom: 550px;
+
+.btn-custom{
+  background: blueviolet;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+  color: white;
 }
-.company_logo img{
-width: 150px;
-height: 60px;
+
+ul{
+  list-style: none;
 }
-.company_logo .udacity{
-  
+
+.hover-custom:hover{
+  background-color: blueviolet;
+  color: white;
+}
+
+.section-bg{
+  background-color: #f9f7ff;
+}
+
+.bg-footer{
+  background-color: blueviolet;
 }
